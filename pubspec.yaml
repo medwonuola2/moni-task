@@ -13,6 +13,8 @@ dependencies:
     sdk: flutter
 
   http:
+  flutter_svg:
+  url_launcher:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
@@ -34,3 +36,4 @@ flutter:
 
   assets:
     - assets/icons/
+    - assets/images/

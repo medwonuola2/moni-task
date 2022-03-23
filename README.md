@@ -1,16 +1,51 @@
 # moni
 
-A new Flutter project.
+A simple app that fetches data from an API and displays it on a screen with two tabs
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### File Structure 
 
-A few resources to get you started if this is your first Flutter project:
+.
+├── android/app/main/res/   # Includes app Icons 
+├── assets/
+    .── fonts               # folder containing DMSans font used in the app
+    .── icons               # folder containing SVG Icons used in the app
+    .── images              # folder containing images and Moni logo
+├── test                    # Automated tests 
+├── lib/                    # Starting folder for dart source code
+    .── main.dart           # app starting point    
+    .── core/
+        .── constants/
+            .── api.dart    # apis
+        .── models/
+            .── agent.dart
+            .── cluster.dart
+        .── services/
+                fetch_cluster.dart
+    .── views/
+        .── screens/
+            .── mycluster/
+                .── widgets/
+                    .── cluster_details.dart
+                    .── cluster_members.dart
+                    .── cluster_page.dart
+                    .── members_info.dart
+                    .── cluster_page.dart
+            .── splash.dart
+        .── styles/
+            .── colors.dart
+            .── text_styles.dart
+        .── widgets/
+            .── customDivider.dart
+└── README.md
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Packages used:
+
+url_launcher
+flutter_svg
+
+### Fonts used:
+
+DMSans
