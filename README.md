@@ -2,6 +2,9 @@
 
 A simple app that fetches data from an API and displays it on a screen with two tabs
 
+Please check the apk in the link below:
+https://drive.google.com/file/d/1Xd54jQaNOcQYp1-j5BAaBaBXdnpDmvFH/view?usp=sharing
+
 ## Getting Started
 
 ### File Structure 
