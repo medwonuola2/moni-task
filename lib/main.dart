@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'constants/colors.dart';
-import 'views/screens/cluster_page.dart';
+import 'package:moni/views/screens/splash.dart';
+import 'package:moni/views/styles/colors.dart';
 
 void main() {
   runApp(const MoniApp());
@@ -15,13 +14,13 @@ class MoniApp extends StatelessWidget {
     return MaterialApp(
       title: "Moni",
       theme: ThemeData(
-        // fontFamily: "DMSans",
+          fontFamily: "DMSans",
           appBarTheme: const AppBarTheme(
               elevation: 0,
-              backgroundColor: kDarkBackground,
+              backgroundColor: MoniAppColors.darkDark,
               centerTitle: true),
-          primaryColor: kPrimaryColor),
-      home: const ClusterPage(),
+          primaryColor: MoniAppColors.primaryBrandBase),
+      home: const SplashView(),
       debugShowCheckedModeBanner: false,
     );
   }
